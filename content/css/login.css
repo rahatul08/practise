@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --color-primary: #ff5722;
+    --color-primary-rgb: 255,87,34;
+    --color-primary-contrast: #fff;
+    --color-primary-contrast-rgb: 255,255,255;
+    --color-primary-shade: #c41c00;
+    --color-primary-tint: #ff8a50;
+    --color-secondary: #455a64;
+    --color-secondary-rgb: 69,90,100;
+    --color-secondary-contrast: #fff;
+    --color-secondary-contrast-rgb: 255,255,255;
+    --color-secondary-shade: #1c313a;
+    --color-secondary-tint: #718792;
+    --color-tertiary: #8c8c8c;
+    --color-tertiary-rgb: 140,140,140;
+    --color-tertiary-contrast: #fff;
+    --color-tertiary-contrast-rgb: 255,255,255;
+    --color-tertiary-shade: #757575;
+    --color-tertiary-tint: #a1a1a1;
+    --color-success: #43a047;
+    --color-success-rgb: 67,160,71;
+    --color-success-contrast: #fff;
+    --color-success-contrast-rgb: 255,255,255;
+    --color-success-shade: #2e7031;
+    --color-success-tint: #68b36b;
+    --color-warning: #ffd54f;
+    --color-warning-rgb: 255,213,79;
+    --color-warning-contrast: #fff;
+    --color-warning-contrast-rgb: 255,255,255;
+    --color-warning-shade: #b29537;
+    --color-warning-tint: #ffdd72;
+    --color-danger: #c62828;
+    --color-danger-rgb: 245,61,61;
+    --color-danger-contrast: #fff;
+    --color-danger-contrast-rgb: 255,255,255;
+    --color-danger-shade: #8a1c1c;
+    --color-danger-tint: #d15353;
+    --color-dark: #222428;
+    --color-dark-rgb: 34,34,34;
+    --color-dark-contrast: #fff;
+    --color-dark-contrast-rgb: 255,255,255;
+    --color-dark-shade: #1e2023;
+    --color-dark-tint: #383a3e;
+    --color-medium: #989aa2;
+    --color-medium-rgb: 152,154,162;
+    --color-medium-contrast: #fff;
+    --color-medium-contrast-rgb: 255,255,255;
+    --color-medium-shade: #86888f;
+    --color-medium-tint: #a2a4ab;
+    --color-light: #f4f5f8;
+    --color-light-rgb: 244,244,244;
+    --color-light-contrast: #000;
+    --color-light-contrast-rgb: 0,0,0;
+    --color-light-shade: #d7d8da;
+    --color-light-tint: #f5f6f9;
+    --color-menu: #fff;
+    --color-menu-rgb: 255,87,34;
+    --color-menu-contrast: var(--color-secondary);
+    --color-menu-contrast-rgb: var(--color-secondary-rgb);
+    --color-menu-shade: #ececec;
+    --color-menu-tint: #fff;
+    --color-red: #960808;
+    --color-red-hover: #aa0909;
+    --color-blue: #0e4690;
+    --color-blue-hover: #1154ac;
+    --color-green: #379130;
+    --color-green-hover: #3ea437;
+    --color-grey: #595959;
+    --color-grey-hover: #4f4f4f;
+  }
+  
+  .login {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-template-rows: -webkit-min-content auto -webkit-min-content;
+    -ms-grid-rows: min-content auto min-content;
+        grid-template-rows: min-content auto min-content;
+    background-image: url("/assets/icons/login-bg.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    padding: 0 15px;
+  }
+  
+  .login .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+  }
+  
+  img.logo {
+    max-width: 140px;
+}
+h1.slogan{
+    font-size: 1.2rem;
+}
+.login .slogan {
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin: 10px 0 40px;
+  }
+  
+  .login__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login.card {
+    background-color: rgba(255, 255, 255, 0.741);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+  }
+  
+  .login .card__head {
+    padding: 25px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  
+  .title {
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .login .card__head .subtitle {
+    color: #718792;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 5px 0 0;
+  }
+  
+  .login .card__body {
+    padding: 25px;
+  }
+  
+
+  .login__input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 50px;
+
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+.login__input > .icon{
+    color: #aeaeae;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    transition-duration: .3s;
+    transition-property: color;
+}
+.content{
+        cursor: text;
+        font-size: 1.4rem;
+        width: 100%;
+    
+}
+.ui-float-label {
+    display: block;
+    position: relative;
+}
+  .input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+     font-size: 0.9rem;;
+}
+ .content--force-margin-right {
+    margin-right: 20px;
+}
+.login__input:focus-within {
+    border-color: #ff5722;
+    box-shadow: 1px 1px 8px 1px rgba(var(--color-primary-rgb),.2),-1px -1px 8px 1px rgba(var(--color-primary-rgb),.2);
+}
+.login__input .content .input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+ .password-recovery {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+button#login-btn {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+}
+  .login .button--login {
+    background-color: #43d67f;
+  }
+  
+.button {
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 15px;
+    width: 100%;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    cursor: pointer;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-property: border box-shadow;
+    transition-property: border box-shadow;
+  }
+  
+.button:hover {
+    background-color: #4fe089;
+  }
+  
+.label {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--color-secondary-tint);
+    margin-bottom: 10px;
+  }
+  
+  
+  button#register-account-btn{
+    background-color: #43d67f;
+    display: block;
+    margin: 0 auto;
+    max-width: 380px;
+    background-color: #fc6c19;
+    font-size: 0.9rem;
+    padding: 10px 0;  
+  }
+  button#register-account-btn:hover{
+    background-color: #ff823a;
+  } 
+  @media screen and (max-height: 754px) {
+    .login.brand {
+      padding-top: 30px;
+    }
+    .login__wrapper {
+      margin-bottom: 15px;
+    }
+    .login__input {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  
+  @media screen and (max-height: 754px) {
+    .brand {
+      padding-top: 30px;
+    }
+    .brand.logo {
+      max-width: 140px;
+    }
+    .brand {
+      padding-top: 30px;
+    }
+  }
+  
+  @media only screen and (max-height: 750px) {
+    .login__wrapper {
+      margin-bottom: 15px;
+    }
+    .card {
+      margin-bottom: 10px;
+    }
+  }

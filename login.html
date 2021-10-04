@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="content/css/login.css">
+    <script src="app/lib/angular.min.js"></script>
+  </head>
+  <body>
+     <div ng-controller="LoginController">
+      <div class="login">
+        <div  class="brand">
+            <img  src="./assets/icons/artinove.svg" alt="logo" class="logo" />
+            <h1 class="slogan">L'espace de travail des dirigeants 3.0</h1>
+        </div>
+        <div  class="login__wrapper">
+            <div  class="card">
+                <div  class="card__head">
+                    <h2  class="title">Identification</h2>
+                    <h3  class="subtitle">Saisissez vos identifiants Artinove pour vous connecter.</h3>
+                </div>
+                <div _ class="card__body">
+                    <form  ng-submit="formSubmit()"  class="ng-pristine ng-invalid ng-touched form">
+                        <div  class="login__input login__input--error">
+                            <div  class="icon"><span>@</span></div>
+                            <span  class="ui-float-label content content--force-margin-right">
+                                <input  id="email-input" 
+                                type="text" size="30"
+                                 class="input ng-pristine ng-invalid ng-touched" 
+                                 placeholder="Saisissez votre adresse mail ici" ng-model="username"  required/>
+                            </span>
+                        </div>
+                        <div  class="login__input login__input--error">
+                            <div  class="icon"><i class="fas fa-key"></i></div>
+                            <div  class="content">
+                                <input
+                                   
+                                    password=""
+                                    autocomplete=""
+                                    id="password-input"
+                                    ng-model="password" 
+                                    class="input ng-pristine ng-invalid ng-touched"
+                                    placeholder="Saisissez votre mot de passe ici"
+                                    type="password"
+                                />
+                            </div>
+                            <div  class="icon icon--large icon--clickable" onclick="myFunction()"><i class="fas fa-eye" id="eye" ></i></div>
+                        </div>
+                        <div  class="password-recovery"><a  id="password-recovery-link" href="/reset-password">J'ai oublié mon mot de passe.</a></div>
+                        <button  id="login-btn" class="button button--login" type="submit">Se connecter</button>
+                        <span class="text-danger">{{ error }}</span>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="label">Vous n'avez pas de compte ?</div>
+                <button  id="register-account-btn" class="button button--register" tabindex="0">
+                    Créer un nouveau espace de travail <br />
+                    <b>gratuitement</b>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
